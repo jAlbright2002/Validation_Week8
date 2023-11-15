@@ -15,7 +15,7 @@ public class Person {
     @NotEmpty(message="Title cannot be empty.")
     String title;
 
-    @Positive(message="Id must be positive.")
+    @Positive(message="Id must be positive.") @Max(5)
     int employeeId;
 
     @Min(18)
